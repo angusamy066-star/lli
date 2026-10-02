@@ -1,0 +1,10 @@
+{
+  "name": "Remix Remix LearnX - Exchange, Learn \u0026 Grow",
+  "description": "Peer-to-peer skill exchange platform with live interactive video sessions, real-time whiteboard collaboration, and 5 free time credits upon registration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ],
+  "majorCapabilities": []
+}
