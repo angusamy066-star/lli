@@ -326,10 +326,6 @@ export const VideoSessionRoom: React.FC = () => {
     setTimeout(() => setCopiedLink(false), 2500);
   };
 
-  const handleOpenPartnerWindow = () => {
-    window.open(inviteUrl, '_blank');
-  };
-
   // Whiteboard drawing handlers
   const startDrawing = (e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
@@ -489,14 +485,16 @@ export const VideoSessionRoom: React.FC = () => {
         {/* Right: Actions */}
         <div className="flex items-center gap-2">
           {connectionStatus !== 'connected' && (
-            <button
-              onClick={handleOpenPartnerWindow}
+            <a
+              href={inviteUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 bg-indigo-950 hover:bg-indigo-900 text-indigo-300 rounded-lg text-xs font-medium border border-indigo-700/60 transition-colors"
               title="Open a second window in this browser to test real-time 2-way streaming"
             >
               <ExternalLink className="w-3.5 h-3.5" />
               <span>Open Partner Window</span>
-            </button>
+            </a>
           )}
 
           <button
@@ -665,13 +663,15 @@ export const VideoSessionRoom: React.FC = () => {
                         {copiedLink ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
                         <span>{copiedLink ? 'Copied' : 'Copy Room Link'}</span>
                       </button>
-                      <button
-                        onClick={handleOpenPartnerWindow}
+                      <a
+                        href={inviteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="px-3.5 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg text-xs font-medium flex items-center justify-center gap-1.5 border border-slate-700"
                       >
                         <ExternalLink className="w-3.5 h-3.5" />
                         <span>Open Partner Tab</span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 )}

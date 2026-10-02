@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
 import { Send, Clock, Calendar, X, ShieldCheck, User } from 'lucide-react';
 
@@ -22,6 +22,12 @@ export const CreateRequestModal: React.FC = () => {
   const [date, setDate] = useState<string>('');
   const [time, setTime] = useState<string>('');
   const [duration, setDuration] = useState<number>(45);
+
+  useEffect(() => {
+    if (selectedPeerForRequest && selectedPeerForRequest.canTeach.length > 0) {
+      setSelectedSkill(selectedPeerForRequest.canTeach[0].name);
+    }
+  }, [selectedPeerForRequest]);
 
   if (!showCreateRequestModal || !selectedPeerForRequest) return null;
 

@@ -187,5 +187,324 @@ export const INITIAL_PARTNER_COURSES: PartnerCourse[] = [
   }
 ];
 
-export const REGISTERED_COMMUNITY_MEMBERS: UserProfile[] = [];
+export const REGISTERED_COMMUNITY_MEMBERS: UserProfile[] = [
+  {
+    id: 'usr-elena',
+    name: 'Elena Rostova',
+    email: 'elena.rostova@learnx.org',
+    avatar: '/src/assets/images/avatar_elena_mentor_1790921198840.jpg',
+    bio: 'Senior Python & ML Engineer. Passionate about algorithms, clean code architecture, and mentoring emerging developers.',
+    language: 'English',
+    educationWorkStatus: 'Staff Software Engineer',
+    mode: 'TEACH',
+    canTeach: [
+      {
+        id: 'sk-elena-1',
+        name: 'Python',
+        category: 'Technical',
+        level: 'Advanced',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 12
+      },
+      {
+        id: 'sk-elena-2',
+        name: 'AI & Machine Learning',
+        category: 'Technical',
+        level: 'Intermediate',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 6
+      }
+    ],
+    wantsToLearn: [
+      {
+        id: 'sk-elena-learn-1',
+        name: 'Public Speaking',
+        category: 'Communication',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      },
+      {
+        id: 'sk-elena-learn-2',
+        name: 'Figma & UI/UX',
+        category: 'Creative',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      }
+    ],
+    learningGoals: ['Improve conference keynote delivery', 'Design intuitive interfaces for machine learning tools'],
+    availabilityDays: ['Monday', 'Wednesday', 'Saturday'],
+    availabilityTime: 'Evenings (6:00 PM - 9:00 PM)',
+    learningStyle: 'Hands-on / Practical',
+    timeCredits: 12,
+    sessionsCompleted: 16,
+    teachingHours: 14,
+    learningHours: 2,
+    ratingAverage: 4.95,
+    ratingsCount: 14,
+    trustScore: 98,
+    reliabilityStatus: 'Exceptional',
+    achievements: ['Top Rated Mentor', 'Python Pioneer', '10+ Verified Sessions'],
+    isAdmin: false,
+    memberSince: 'January 2026',
+    isOnline: true
+  },
+  {
+    id: 'usr-marcus',
+    name: 'Marcus Vance',
+    email: 'marcus.vance@learnx.org',
+    avatar: '/src/assets/images/avatar_marcus_mentor_1790921212941.jpg',
+    bio: 'Fullstack web specialist specializing in React, TypeScript, and microservice cloud infrastructure. Excited to exchange knowledge!',
+    language: 'English',
+    educationWorkStatus: 'Solutions Architect',
+    mode: 'TEACH',
+    canTeach: [
+      {
+        id: 'sk-marcus-1',
+        name: 'Web Development',
+        category: 'Technical',
+        level: 'Advanced',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 10
+      },
+      {
+        id: 'sk-marcus-2',
+        name: 'JavaScript',
+        category: 'Technical',
+        level: 'Advanced',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 8
+      },
+      {
+        id: 'sk-marcus-3',
+        name: 'Cloud Architecture',
+        category: 'Technical',
+        level: 'Intermediate',
+        proof: 'AI Assessed',
+        verifiedSessionsCount: 4
+      }
+    ],
+    wantsToLearn: [
+      {
+        id: 'sk-marcus-learn-1',
+        name: 'Python',
+        category: 'Technical',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      },
+      {
+        id: 'sk-marcus-learn-2',
+        name: 'Data Science',
+        category: 'Technical',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      }
+    ],
+    learningGoals: ['Build automated data parsing pipelines in Python'],
+    availabilityDays: ['Tuesday', 'Thursday', 'Sunday'],
+    availabilityTime: 'Afternoons (2:00 PM - 6:00 PM)',
+    learningStyle: 'Hands-on / Practical',
+    timeCredits: 8,
+    sessionsCompleted: 11,
+    teachingHours: 9,
+    learningHours: 2,
+    ratingAverage: 4.88,
+    ratingsCount: 9,
+    trustScore: 95,
+    reliabilityStatus: 'Exceptional',
+    achievements: ['Code Architect', 'Community Pillar'],
+    isAdmin: false,
+    memberSince: 'February 2026',
+    isOnline: true
+  },
+  {
+    id: 'usr-priya',
+    name: 'Priya Patel',
+    email: 'priya.patel@learnx.org',
+    avatar: '/src/assets/images/avatar_priya_mentor_1790921226019.jpg',
+    bio: 'Product Designer & Design Systems lead. I help developers master typography, wireframing, and Figma component libraries.',
+    language: 'English',
+    educationWorkStatus: 'Lead Product Designer',
+    mode: 'TEACH',
+    canTeach: [
+      {
+        id: 'sk-priya-1',
+        name: 'Figma & UI/UX',
+        category: 'Creative',
+        level: 'Advanced',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 8
+      },
+      {
+        id: 'sk-priya-2',
+        name: 'Professional Communication',
+        category: 'Communication',
+        level: 'Intermediate',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 5
+      }
+    ],
+    wantsToLearn: [
+      {
+        id: 'sk-priya-learn-1',
+        name: 'Web Development',
+        category: 'Technical',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      },
+      {
+        id: 'sk-priya-learn-2',
+        name: 'JavaScript',
+        category: 'Technical',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      }
+    ],
+    learningGoals: ['Implement interactive frontend UI prototypes with JavaScript'],
+    availabilityDays: ['Monday', 'Friday', 'Saturday'],
+    availabilityTime: 'Mornings (9:00 AM - 12:00 PM)',
+    learningStyle: 'Visual / Diagrammatic',
+    timeCredits: 7,
+    sessionsCompleted: 9,
+    teachingHours: 7,
+    learningHours: 2,
+    ratingAverage: 4.92,
+    ratingsCount: 8,
+    trustScore: 96,
+    reliabilityStatus: 'Exceptional',
+    achievements: ['Design Maestro', 'Top Reviewer'],
+    isAdmin: false,
+    memberSince: 'March 2026',
+    isOnline: true
+  },
+  {
+    id: 'usr-kenji',
+    name: 'Kenji Sato',
+    email: 'kenji.sato@learnx.org',
+    avatar: '/src/assets/images/avatar_kenji_quant_1790921280361.jpg',
+    bio: 'Data analyst and finance professional. Expertise in advanced spreadsheet modeling, metrics analytics, and data-informed decision making.',
+    language: 'English',
+    educationWorkStatus: 'Senior Financial Analyst',
+    mode: 'TEACH',
+    canTeach: [
+      {
+        id: 'sk-kenji-1',
+        name: 'Excel & Analytics',
+        category: 'Technical',
+        level: 'Advanced',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 6
+      },
+      {
+        id: 'sk-kenji-2',
+        name: 'Personal Finance',
+        category: 'Other',
+        level: 'Intermediate',
+        proof: 'AI Assessed',
+        verifiedSessionsCount: 3
+      }
+    ],
+    wantsToLearn: [
+      {
+        id: 'sk-kenji-learn-1',
+        name: 'Python',
+        category: 'Technical',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      },
+      {
+        id: 'sk-kenji-learn-2',
+        name: 'AI & Machine Learning',
+        category: 'Technical',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      }
+    ],
+    learningGoals: ['Automate quantitative financial modeling with Python data libraries'],
+    availabilityDays: ['Wednesday', 'Thursday', 'Sunday'],
+    availabilityTime: 'Flexible',
+    learningStyle: 'Theory & Deep-Dive',
+    timeCredits: 6,
+    sessionsCompleted: 7,
+    teachingHours: 6,
+    learningHours: 1,
+    ratingAverage: 4.82,
+    ratingsCount: 6,
+    trustScore: 93,
+    reliabilityStatus: 'Reliable',
+    achievements: ['Analytical Master'],
+    isAdmin: false,
+    memberSince: 'March 2026',
+    isOnline: false
+  },
+  {
+    id: 'usr-chloe',
+    name: 'Chloe Bennett',
+    email: 'chloe.bennett@learnx.org',
+    avatar: '/src/assets/images/avatar_chloe_pitch_1790921292416.jpg',
+    bio: 'Tech founder and pitch coach. Mentoring engineers and founders in technical interview performance, resume clarity, and live presentations.',
+    language: 'English',
+    educationWorkStatus: 'Startup Founder & Advisor',
+    mode: 'TEACH',
+    canTeach: [
+      {
+        id: 'sk-chloe-1',
+        name: 'Tech Interview Prep',
+        category: 'Career',
+        level: 'Advanced',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 5
+      },
+      {
+        id: 'sk-chloe-2',
+        name: 'Public Speaking',
+        category: 'Communication',
+        level: 'Intermediate',
+        proof: 'Peer Verified',
+        verifiedSessionsCount: 4
+      }
+    ],
+    wantsToLearn: [
+      {
+        id: 'sk-chloe-learn-1',
+        name: 'Cloud Architecture',
+        category: 'Technical',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      },
+      {
+        id: 'sk-chloe-learn-2',
+        name: 'Cybersecurity',
+        category: 'Technical',
+        level: 'Beginner',
+        proof: 'Self Claimed',
+        verifiedSessionsCount: 0
+      }
+    ],
+    learningGoals: ['Understand high-level microservice reliability and security protocols'],
+    availabilityDays: ['Tuesday', 'Saturday'],
+    availabilityTime: 'Mornings (10:00 AM - 1:00 PM)',
+    learningStyle: 'Conversational / Discussion',
+    timeCredits: 5,
+    sessionsCompleted: 6,
+    teachingHours: 5,
+    learningHours: 1,
+    ratingAverage: 4.9,
+    ratingsCount: 5,
+    trustScore: 95,
+    reliabilityStatus: 'Reliable',
+    achievements: ['Pitch Master', 'Career Catalyst'],
+    isAdmin: false,
+    memberSince: 'April 2026',
+    isOnline: true
+  }
+];
 

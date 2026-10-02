@@ -19,7 +19,7 @@ export const AIAssistantModal: React.FC<{ isOpen: boolean; onClose: () => void }
       role: 'assistant',
       content: `Hello ${
         user?.name ? user.name.split(' ')[0] : 'there'
-      }! I am your LearnX AI Assistant powered by OpenAI. I can help you find compatible mentors, structure reciprocal learning sessions, or create a study outline. How can I help you today?`
+      }! I am your LearnX AI Assistant. I can help you find compatible mentors, structure reciprocal learning sessions, or create a study outline. How can I help you today?`
     }
   ]);
   const [input, setInput] = useState<string>('');
@@ -83,7 +83,7 @@ export const AIAssistantModal: React.FC<{ isOpen: boolean; onClose: () => void }
       ]);
     } catch (err: any) {
       console.error('AI chat error:', err);
-      setError(err.message || 'Unable to connect to AI server. Please verify OpenAI API key.');
+      setError(err.message || 'Unable to connect to AI server. Please try again.');
     } finally {
       setLoading(false);
     }

@@ -54,7 +54,7 @@ const MainApp: React.FC = () => {
         <button
           onClick={() => setShowAIAssistant(true)}
           className="flex items-center gap-2 px-4 py-3 bg-[#18050e] hover:bg-[#340b20] text-pink-200 border border-pink-700/60 rounded-2xl shadow-xl font-bold text-xs transition-all hover:scale-105 active:scale-95"
-          title="Open LearnX AI Assistant (OpenAI Powered)"
+          title="Open LearnX AI Assistant"
         >
           <Sparkles className="w-4 h-4 text-pink-400" />
           <span>AI Assistant</span>

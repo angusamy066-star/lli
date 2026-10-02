@@ -122,9 +122,14 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [allUsers, setAllUsers] = useState<UserProfile[]>(() => {
     const saved = localStorage.getItem(STORAGE_KEYS.ALL_USERS);
     if (saved) {
-      try { return JSON.parse(saved); } catch (e) { /* ignore */ }
+      try {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed;
+        }
+      } catch (e) { /* ignore */ }
     }
-    return [];
+    return REGISTERED_COMMUNITY_MEMBERS;
   });
 
   // Current active logged in user
